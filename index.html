@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head><title>practice</title></head>
+<body>
+
+    <button id="btn">
+Click
+</button>
+
+  <script>
+    //JavaScript is a machine that takes: input → processing → output. Example://
+
+    let name = "Abdullah";
+
+function greet(person) {
+  return "Hello " + person;
+}
+
+console.log(greet(name));
+
+//Example 2://
+
+const groceries = [
+  { name: "rice", price: 1200 },
+  { name: "beans", price: 900 },
+  { name: "garri", price: 500 },
+  { name: "oil", price: 2000 }
+];
+
+function getExpensiveItems(list) {
+  return list.filter(item => item.price > 1000);
+}
+
+console.log(getExpensiveItems(groceries));
+
+let students = ["Ali", "Musa", "John"];
+
+console.log(students[0]);
+
+students.forEach(student => {
+ console.log(student);
+});
+
+let user = {
+ name: "Musa",
+ age: 20,
+ course: "Computer Science"
+};
+
+console.log(user.name);
+console.log(user.course);
+
+function add(a,b){
+ return a+b;
+}
+
+console.log(add(5,3));
+
+let students1 = [
+ {
+  name:"John",
+  score:80
+ },
+ {
+  name:"Mary",
+  score:50
+ }
+];
+
+function getAverage(){
+ // calculate average
+}
+
+function addStudent(){
+ // add new student
+}
+
+function findStudent(){
+ // search student
+}
+
+
+let button = document.getElementById("btn");
+
+button.onclick = function(){
+ alert("You clicked me");
+};
+
+  </script>
+</body>
+</html>
